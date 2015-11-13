@@ -12,5 +12,6 @@
    * [Packages](aspnet_mvc/packages.md)
    * [Testing](aspnet_mvc/testing.md)
 * Web Front End
+   * Intro
 * [Reading](reading.md)
 
