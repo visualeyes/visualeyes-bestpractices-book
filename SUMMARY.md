@@ -17,6 +17,6 @@
    * [CSS](css.md)
    * [Javascript](javascript.md)
    * [Frameworks](frameworks.md)
-   * Testing
+   * [Testing](testing.md)
 * [Reading](reading.md)
 
