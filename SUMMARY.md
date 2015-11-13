@@ -15,5 +15,6 @@
    * [Intro](intro.md)
    * [Javascript](javascript.md)
    * [CSS](css.md)
+   * HTML
 * [Reading](reading.md)
 
