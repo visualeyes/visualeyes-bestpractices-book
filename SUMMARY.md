@@ -13,5 +13,6 @@
    * [Testing](aspnet_mvc/testing.md)
 * Web Front End
    * Intro
+   * Javascript
 * [Reading](reading.md)
 
