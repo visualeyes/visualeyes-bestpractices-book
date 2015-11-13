@@ -2,4 +2,5 @@
 
 * [Introduction](README.md)
 * Software Design
+   * Components
 
