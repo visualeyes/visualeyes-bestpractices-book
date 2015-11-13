@@ -13,8 +13,8 @@
    * [Testing](aspnet_mvc/testing.md)
 * Web Front End
    * [Intro](intro.md)
+   * [HTML](html.md)
    * [Javascript](javascript.md)
    * [CSS](css.md)
-   * [HTML](html.md)
 * [Reading](reading.md)
 
