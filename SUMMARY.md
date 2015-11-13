@@ -8,6 +8,6 @@
    * [Inheritance and Composition](software_design/inheritance_and_composition.md)
 * [ASP.NET MVC](aspnet_mvc/intro.md)
    * ASP.NET MVC
-   * Business Layer
+   * [Business Layer](aspnet_mvc/business_layer.md)
 * [Reading](reading.md)
 
