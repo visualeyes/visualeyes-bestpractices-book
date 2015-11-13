@@ -14,7 +14,7 @@
 * Web Front End
    * [Intro](intro.md)
    * [HTML](html.md)
-   * [Javascript](javascript.md)
    * [CSS](css.md)
+   * [Javascript](javascript.md)
 * [Reading](reading.md)
 
