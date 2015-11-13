@@ -1,4 +1,4 @@
-My Awesome Book
+Development Best Practices
 =======
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+The purpose of this book is for our developers to collaboratively build a knowledge base of best practices for our tools. If it is useful for you, that's great as well. Feel free to contribute your ideas by submitting an issue.
