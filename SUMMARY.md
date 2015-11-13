@@ -10,5 +10,6 @@
    * [Business Layer](aspnet_mvc/business_layer.md)
    * [Web Layer](aspnet_mvc/web_layer.md)
    * [Packages](aspnet_mvc/packages.md)
+   * Testing
 * [Reading](reading.md)
 
