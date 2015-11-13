@@ -9,6 +9,6 @@
 * [ASP.NET MVC](aspnet_mvc/intro.md)
    * [Business Layer](aspnet_mvc/business_layer.md)
    * [Web Layer](aspnet_mvc/web_layer.md)
-   * Packages
+   * [Packages](aspnet_mvc/packages.md)
 * [Reading](reading.md)
 
