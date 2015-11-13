@@ -7,7 +7,7 @@ Areas represent a grouping of Models, Views, Controllers + Framework code that r
 ## Models
 Models represents data sent from the client and to the client through views. This dual role can be split into RequestModels and ViewModels if required. As stated earlier it is very important not to confuse Data Transfer Objects (DTOs) with models.
 
-Request models are responsible for holding the data sent to the WebServer from the client. These models are.
+Request models are responsible for holding the data sent to the WebServer from the client. These models are can should provide validation logic using Validation Attributes or the `IValidatableObject` interface.
 
 View Models are responsible for holding data s
 
