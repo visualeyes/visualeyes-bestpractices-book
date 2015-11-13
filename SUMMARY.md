@@ -11,6 +11,6 @@
    * [Web Layer](aspnet_mvc/web_layer.md)
    * [Packages](aspnet_mvc/packages.md)
    * [Testing](aspnet_mvc/testing.md)
-* [Reading](reading.md)
 * Web Front End
+* [Reading](reading.md)
 
