@@ -1,5 +1,5 @@
 # Web Layer
-All of what has been discussed previously sets up the foundation for how we should be working with ASP.NET MVC.
+
 
 ## Areas
 Areas represent a grouping of Models, Views, Controllers + Framework code that relates to that area.
