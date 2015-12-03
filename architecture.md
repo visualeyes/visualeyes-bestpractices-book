@@ -2,7 +2,9 @@
 The two prominent Architectures for Web Applications are **Monolithic** and **Service Oriented**.
  
 ## Monolithic Architecture
-Monolithic architecture describes an Application that contains all the components in a single program on a single platform. Internally Monolithic Applications contain separate components. Below is an example of the components in a Monolithic application.
+Monolithic architecture describes an Application that contains all the components in a single program on a single platform. Internally Monolithic Applications contain separate components.
+
+**Example**
 
 ![Monolithic Application Architecture Example](Images/Application Architecture.png)
 
