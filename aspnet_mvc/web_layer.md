@@ -36,7 +36,7 @@ Controllers handle User Actions and returns a Model and a View to the User. Cont
 How to handle validation that requires validating outside of the model
 
 **Example**
-```c#
+``` c#
 public class TodoController {
     private readonly ITodoService todoService;
     
