@@ -32,7 +32,8 @@ public void Num_Times_Two(int num, int expected) {
 
 ### Mocking
 
-
+### Code Coverage
+* Open Cover
 
 ## Integration Tests
 * Test components together
