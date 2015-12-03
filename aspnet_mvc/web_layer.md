@@ -2,7 +2,7 @@
 The Web Layer provides interfaces to the Users. The interfaces in the web layer can come in different forms. For example, a HTML View, Single Page Application, RESTful API or RSS feed.
 
 ## Areas
-Areas represent a grouping of Models, Views, Controllers + Framework code.
+Areas represent a grouping of Models, Views, Controllers + Framework code. Smaller applications might choose to not use Areas and simply use these components in the root of the Application.
 
 ## Models
 Models represents data sent from the client and to the client through views. This dual role can be split into RequestModels and ViewModels if required. As stated earlier it is very important not to confuse Data Transfer Objects (DTOs) with models.
