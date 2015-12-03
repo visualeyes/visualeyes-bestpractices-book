@@ -48,6 +48,8 @@ public class TodoService {
         return this.storage.GetTodos();
     }
     
+    // You could restrict access to DTOs by requiring a selector
+    // This prevents the DTOs being used downstream in inappropriate places
     public IEnumerable<T> GetTodoModels<T>(Func<TodoItemDto, T> selector) {
         return this.storage.GetTodos().Select(selector);
     }
