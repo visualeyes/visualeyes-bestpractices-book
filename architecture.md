@@ -6,6 +6,9 @@ Monolithic architecture describes an Application that contains all the component
 
 ![Monolithic Application Architecture Example](Images/Application Architecture.png)
 
+**Pros**
+
+**Cons**
 
 ## Service Oriented Architecture
 ![Service Oriented Architecture Example](Images/Microservice Application Architecture.png)
