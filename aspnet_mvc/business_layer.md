@@ -53,7 +53,7 @@ public class TodoService {
     
     // Restrict access to DTOs by requiring a selector
     //   This prevents the DTOs being used downstream in inappropriate places
-    // Apply business logic to the data at this layer
+    // Apply business logic to the data at this layer to reduce duplication
     public IEnumerable<T> GetIncompleteTodoModels<T>(Func<TodoItemDto, T> selector) {
         return this.storage
                     .GetTodos()
