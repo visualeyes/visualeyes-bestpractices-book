@@ -2,7 +2,7 @@
 The Web Layer provides interfaces to the Users. The interfaces in the web layer can come in different forms. For example, a HTML View, Single Page Application, RESTful API or RSS feed.
 
 ## Areas
-Areas represent a grouping of Models, Views, Controllers + Framework code. Smaller applications might choose to not use Areas and simply use these components in the root of the Application.
+Areas represent a grouping of Models, Views, Controllers + Framework code. Smaller applications might choose to not use Areas and simply use these components in the root of the Application. The Framework code is not standard in MVC, we have added it to provide a place for Services specific to an Area or the Web Layer.
 
 ## Models
 Models represents data sent from the client and to the client through views. This dual role can be split into RequestModels and ViewModels if required. Data Transfer Objects (DTOs) should not be used as models. Doing so increases coupling and reduces cohesion.
@@ -78,3 +78,10 @@ ASP.NET MVC provies HTML Helpers that generate HTML. These Helpers are useful fo
 ```
 
 ## Framework
+The Framework component contains Services that are specific to the Web Layer or Area. These Services are primarily used by Controllers. 
+
+For Examples:
+* Identity Services
+* Logging
+* Caching
+
