@@ -10,7 +10,9 @@ Monolithic architecture describes an Application that contains all the component
 
 **Cons**
 
-## Service Oriented Architecture
+## Service Oriented Architecture (Microservices)
+
+
 ![Service Oriented Architecture Example](Images/Microservice Application Architecture.png)
 
 ## Application Architecture 
