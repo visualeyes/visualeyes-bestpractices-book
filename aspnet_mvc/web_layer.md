@@ -37,7 +37,13 @@ How to handle validation that requires validating outside of the model
 
 **Example**
 ```c#
-public class Controller {
+public class TodoController {
+    private readonly ITodoService todoService;
+    
+    public TodoController(ITodoService todoService) {
+        this.todoService = todoService;
+    }
+    
     [Route("/todos"), HttpGet]
     public ActionResult List() {
         return View();
