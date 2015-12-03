@@ -1,11 +1,11 @@
 # Architecture
  
 ## Monoliths Architecture
-![Monolith Application Architecture](Images/Application Architecture.png)
+![Monolith Application Architecture Example](Images/Application Architecture.png)
 
 
 ## Service Oriented Architecture
-![](Images/Microservice Application Architecture.png)
+![Service Oriented Architecture Example](Images/Microservice Application Architecture.png)
 
 ## Application Architecture 
 ### Persistance Layer
