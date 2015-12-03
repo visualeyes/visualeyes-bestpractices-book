@@ -69,8 +69,12 @@ ASP.NET MVC provide a `ViewBag` in the View and Controller. This is a dynamic ob
 ASP.NET MVC provies HTML Helpers that generate HTML. These Helpers are useful for generating Html for Properties on a Model i.e. `Html.InputFor(t => t.Title)`. However, this does not restrict you from writing HTML in the view if required. When writing Html for properties on a Model it is advisable to use the `Html.NameFor` method.
 
 **For example**
-```Razor
-<input type="text" name="@Html.NameFor(t => t.Title)" />
+```Html
+<input 
+  class="my-nice-input" 
+  type="text" 
+  name="@Html.NameFor(t => t.Title)" 
+  placeholder="What do you want to do?" />
 ```
 
 * Can take advantage of HTML Helpers
