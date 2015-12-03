@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* Architecture
 * [Software Design](software_design.md)
    * [Components](software_design/components.md)
    * [Static Functions](software_design/static_functions.md)
@@ -19,5 +20,4 @@
    * [Frameworks](frameworks.md)
    * [Testing](testing.md)
 * [Reading](reading.md)
-* Architecture
 
