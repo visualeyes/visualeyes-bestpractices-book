@@ -17,3 +17,16 @@ Objects that represent data are often called Data Transfer Objects (DTOs). It is
 
 ##Modules
 Modules represent the core business logic of the application. Each module should aim to have well defined boundaries. Modules provide services to be used by other layers of the application. These services may include data access and manipulation as well as business logic.
+
+
+## Example
+
+``` c#
+public class TodoItemDto {
+    public int ID { get; set; }
+    public string Title { get; set; }
+    public bool Done { get; set; }
+}
+
+
+```
