@@ -46,11 +46,17 @@ public class TodoController {
     
     [Route("/todos"), HttpGet]
     public ActionResult List() {
-        return View();
+        var models = todoService.GetIncompleteTodoModels(t => new TodoListItemModel {
+            Title = t.Title
+        });
+        
+        return View(models);
     }
     
     [Route("/todos/markdone/{id}"), HttpPost]
     public ActionResult MarkDone(int id) {
+        todoService.MarkDone(id);
+        return RedirectToAction("list");
     }
 }
 ```
