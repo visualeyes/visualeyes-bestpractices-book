@@ -9,10 +9,19 @@ Models represents data sent from the client and to the client through views. Thi
 
 Request models are responsible for holding the data sent to the WebServer from the client. These models are can should provide validation logic using Validation Attributes or the `IValidatableObject` interface.
 
-View Models are responsible for holding data s
+View Models are responsible for holding the data sent to the View. These models should only provide transformational logic to turn  
 
-* View Models -> not DTOs (Data Transfer Objects)
-* Validate in models
+**Example**
+``` c#
+public class AddTodoRequestModel {
+    [Required]
+    public string Title { get; set; }
+}
+
+public class TodoViewModel {
+    public string Title { get; set; }
+}
+```
 
 ## Controllers
 * Dumb controllers. Inject services that perform the complex logic you require
