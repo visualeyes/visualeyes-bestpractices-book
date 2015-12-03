@@ -28,5 +28,31 @@ public class TodoItemDto {
     public bool Done { get; set; }
 }
 
+// Implementation using some persistance service (SQL, NoSQL, REST API)
+public interface ITodoStorageService {
+    IEnumerable<TodoItemDto> GetTodos();
+    TodoItemDto GetTodo(int id);
+    TodoItemDto CreateTodo(string title);
+    void UpdateTodo(int id, string title, bool done);
+}
+
+public class TodoService {
+    private readonly ITodoStorageService storage;
+    
+    public TodoService(ITodoStorageService storage) {
+        this.storage = storage;
+    }
+    
+    public IEnumerable<TodoItemDto> GetTodos() {
+        return this.storage.GetTodos();
+    }
+    
+    public void MarkDone(int id) {
+        var todo = this.storage.GetTodo(id);
+        if (todo == null) throw new Exception("Could not find that todo");
+        
+        this.storage.UpdateTodo(todo.ID, todo.Title, true);
+    }
+}
 
 ```
