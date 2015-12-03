@@ -1,5 +1,5 @@
 # Web Layer
-The Web Layer provides interfaces to the Users.
+The Web Layer provides interfaces to the Users. The interfaces in the web layer can come in different forms. For example, a HTML View, Single Page Application, RESTful API or RSS feed.
 
 ## Areas
 Areas represent a grouping of Models, Views, Controllers + Framework code.
