@@ -13,11 +13,11 @@
    * [Packages](aspnet_mvc/packages.md)
    * [Testing](aspnet_mvc/testing.md)
 * Web Front End
-   * [Intro](intro.md)
-   * [HTML](html.md)
-   * [CSS](css.md)
-   * [Javascript](javascript.md)
-   * [Frameworks](frameworks.md)
-   * [Testing](testing.md)
+   * [Intro](web_front_end/intro.md)
+   * [HTML](web_front_end/html.md)
+   * [CSS](web_front_end/css.md)
+   * [Javascript](web_front_end/javascript.md)
+   * [Frameworks](web_front_end/frameworks.md)
+   * [Testing](web_front_end/testing.md)
 * [Reading](reading.md)
 
