@@ -18,6 +18,3 @@ Service oriented Architecture or Microservices are provide services to other com
 **Example**
 
 ![Service Oriented Architecture Example](Images/Microservice Application Architecture.png)
-
-## Application Architecture 
-### Persistance Layer
