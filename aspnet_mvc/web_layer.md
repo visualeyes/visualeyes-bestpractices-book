@@ -2,7 +2,7 @@
 
 
 ## Areas
-Areas represent a grouping of Models, Views, Controllers + Framework code that relates to that area.
+Areas represent a grouping of Models, Views, Controllers + Framework code.
 
 ## Models
 Models represents data sent from the client and to the client through views. This dual role can be split into RequestModels and ViewModels if required. As stated earlier it is very important not to confuse Data Transfer Objects (DTOs) with models.
