@@ -37,7 +37,7 @@ public interface ITodoStorageService {
     void UpdateTodo(int id, string title, bool done);
 }
 
-public class TodoService {
+public class TodoService : ITodoService {
     private readonly ITodoStorageService storage;
     
     public TodoService(ITodoStorageService storage) {
