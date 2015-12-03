@@ -11,7 +11,7 @@ Monolithic architecture describes an Application that contains all the component
 **Cons**
 
 ## Service Oriented Architecture (Microservices)
-Service oriented Architecture or Microservices are provide services to other components. Each service is an independent system that make up a larger Application.
+Service oriented Architecture or Microservices are provide services to other components. Each service is an independent system that make up a larger Application. For example, one service may provide the UI and another may provide data persistence through APIs.
 
 ![Service Oriented Architecture Example](Images/Microservice Application Architecture.png)
 
