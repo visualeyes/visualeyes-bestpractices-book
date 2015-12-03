@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* Architecture
+* [Architecture](architecture.md)
 * [Software Design](software_design.md)
    * [Components](software_design/components.md)
    * [Static Functions](software_design/static_functions.md)
