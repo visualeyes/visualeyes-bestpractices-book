@@ -1,9 +1,13 @@
 # Testing
-## Unit Tests
+Testing is a critical part of delivering high quality code. Testing helps prevent regressions and bugs.
 
-* Small
-* Isolated
-* No Network Resources (DB, Web Services)
+## Unit Tests
+Unit tests Assert that the logic in components operate as expected. Each Unit test should isolate a small part of a component and test that it operates as expected. Each test should be independent of other tests. Unit tests should not access persisted state or network services. This includes:
+* Relational Databases
+* NoSql Databaes
+* Files
+* Web Services
+
 
 ### Facts and Theories (xUnit)
 
@@ -38,3 +42,5 @@ public void Num_Times_Two(int num, int expected) {
 * Start with an expected state
 * Limit what you test
 * Cleanup
+
+## Performance Tests
