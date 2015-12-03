@@ -1,5 +1,0 @@
-# Javascript
-
-## Functional Programming
-
-### Async
