@@ -1,5 +1,5 @@
 # Web Layer
-The Web Layer provides the 
+The Web Layer provides interfaces to the Users.
 
 ## Areas
 Areas represent a grouping of Models, Views, Controllers + Framework code.
