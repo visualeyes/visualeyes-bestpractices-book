@@ -43,6 +43,11 @@ public class TodoService {
         this.storage = storage;
     }
     
+    // Get the TodoDtos
+    public IEnumerable<TodoItemDto> GetTodos() {
+        return this.storage.GetTodos();
+    }
+    
     public IEnumerable<T> GetTodoModels<T>(Func<TodoItemDto, T> selector) {
         return this.storage.GetTodos().Select(selector);
     }
