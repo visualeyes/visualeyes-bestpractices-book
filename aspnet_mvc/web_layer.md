@@ -62,7 +62,17 @@ public class TodoController {
 ```
 
 ## Views
-* Avoid doing complicated stuff with ViewBag
+Views generate HTML to present to the user based on a Model.
+
+ASP.NET MVC provide a `ViewBag` in the View and Controller. This is a dynamic object that can be used the send data from the Controller to the View. The ViewBag should be used to replace a Model. It should only be used in a limited way where a Model cannot be used. An example of this may be setting the current User's name on the ViewBag from an Attribute.
+
+ASP.NET MVC provies HTML Helpers that generate HTML. These Helpers are useful for generating Html for Properties on a Model i.e. `Html.InputFor(t => t.Title)`. However, this does not restrict you from writing HTML in the view if required. When writing Html for properties on a Model it is advisable to use the `Html.NameFor` method.
+
+**For example**
+```Razor
+<input type="text" name="@Html.NameFor(t => t.Title)" />
+```
+
 * Can take advantage of HTML Helpers
 * However no restrictions against writing your own html
 * If you want to write your own html @Html.NameFor
