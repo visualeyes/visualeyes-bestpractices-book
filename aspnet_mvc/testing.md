@@ -6,6 +6,7 @@
 
 ### Facts and Theories (xUnit)
 
+**Fact Example**
 ``` c#
 [Fact]
 public void One_Equal_One() {
@@ -13,6 +14,7 @@ public void One_Equal_One() {
 }
 ```
 
+**Theory Example**
 ``` c#
 [Theory]
 [InlineData(1, 2)]
