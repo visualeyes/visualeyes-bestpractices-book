@@ -1,7 +1,8 @@
 # Architecture
+
  
-## Monoliths Architecture
-![Monolith Application Architecture Example](Images/Application Architecture.png)
+## Monolithic Architecture
+![Monolithic Application Architecture Example](Images/Application Architecture.png)
 
 
 ## Service Oriented Architecture
