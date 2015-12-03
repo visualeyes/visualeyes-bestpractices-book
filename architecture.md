@@ -1,5 +1,5 @@
 # Architecture
-
-![Application Architecture](Application Architecture.png)
+ 
+![](Application Architecture.png)
 
 ### Persistance Layer
