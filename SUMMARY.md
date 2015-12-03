@@ -19,4 +19,5 @@
    * [Frameworks](frameworks.md)
    * [Testing](testing.md)
 * [Reading](reading.md)
+* Architecture
 
