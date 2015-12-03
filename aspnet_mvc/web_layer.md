@@ -1,5 +1,5 @@
 # Web Layer
-
+The Web Layer provides the 
 
 ## Areas
 Areas represent a grouping of Models, Views, Controllers + Framework code.
