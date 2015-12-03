@@ -5,7 +5,7 @@ The Web Layer provides interfaces to the Users. The interfaces in the web layer 
 Areas represent a grouping of Models, Views, Controllers + Framework code. Smaller applications might choose to not use Areas and simply use these components in the root of the Application.
 
 ## Models
-Models represents data sent from the client and to the client through views. This dual role can be split into RequestModels and ViewModels if required. As stated earlier it is very important not to confuse Data Transfer Objects (DTOs) with models.
+Models represents data sent from the client and to the client through views. This dual role can be split into RequestModels and ViewModels if required. Data Transfer Objects (DTOs) should not be used as models. Doing so increases coupling and reduces cohesion.
 
 Request models are responsible for holding the data sent to the WebServer from the client. These models are can should provide validation logic using Validation Attributes or the `IValidatableObject` interface.
 
