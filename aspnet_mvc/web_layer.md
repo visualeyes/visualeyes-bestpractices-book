@@ -30,11 +30,24 @@ public class TodoViewModel {
 ```
 
 ## Controllers
-* Dumb controllers. Inject services that perform the complex logic you require
-  * i.e. storage services
+Controllers handle User Actions and returns a Model and a View to the User. Controllers are the junction between the Web Layer and Business Layer. Controllers should not perform complex logic. Instead they utilise services in the Business Layer to perform complex operations based on User actions.
 
 
 How to handle validation that requires validating outside of the model
+
+**Example**
+```c#
+public class Controller {
+    [Route("/todos"), HttpGet]
+    public ActionResult List() {
+        return View();
+    }
+    
+    [Route("/todos/markdone/{id}"), HttpPost]
+    public ActionResult MarkDone(int id) {
+    }
+}
+```
 
 ## Views
 * Avoid doing complicated stuff with ViewBag
