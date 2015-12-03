@@ -9,7 +9,7 @@ Models represents data sent from the client and to the client through views. Thi
 
 Request models are responsible for holding the data sent to the WebServer from the client. These models are can should provide validation logic using Validation Attributes or the `IValidatableObject` interface.
 
-View Models are responsible for holding the data sent to the View. These models should only provide transformational logic to convert Data into appropriate formats for the view.
+View Models are responsible for holding the data sent to the View. These models should only contain data transformation logic. This logic should only exist to convert data into appropriate formats for the View.
 
 **Examples**
 ``` c#
