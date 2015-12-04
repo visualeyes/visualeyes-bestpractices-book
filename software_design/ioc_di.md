@@ -71,7 +71,7 @@ public class ConsolePrinter {
 }
 
 var container = new DIContainer(); // Unity, Autofac ect.
-container.RegisterType<ITextService, DatabaseTextService>();
+container.RegisterType&lt;ITextService, DatabaseTextService>();
 
 // Note, resolving like this is generally not a good idea
 // Containers should be used in very limited number of places
