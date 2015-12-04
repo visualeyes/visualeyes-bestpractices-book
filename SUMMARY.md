@@ -16,7 +16,7 @@
    * [HTML](web_front_end/html.md)
    * [CSS](web_front_end/css.md)
    * [Javascript](web_front_end/javascript.md)
-   * [Frameworks](web_front_end/frameworks.md)
+   * [SPA Frameworks](web_front_end/spa_frameworks.md)
    * [Testing](web_front_end/testing.md)
 * [Reading](reading.md)
 
