@@ -39,7 +39,7 @@ ConsolePrinter is dependent on the interface ITextGetter not the implementation.
 How does Dependency Injection further reduce coupling of components?
 Dependency Injection enables us to have a DI Container construct objects at runtime injecting the services into our classes. This enables us to specify implementations of a service in a reduced number of places rather than throughout the entire code base. 
 
-```c#
+```` c#
 public interface ITextService {
   string GetText();
 }
@@ -71,13 +71,13 @@ public class ConsolePrinter {
 }
 
 var container = new DIContainer(); // Unity, Autofac ect.
-container.RegisterType&lt;ITextService, DatabaseTextService>();
+container.RegisterType<ITextService, DatabaseTextService>();
 
 // Note, resolving like this is generally not a good idea
 // Containers should be used in very limited number of places
 var printer = container.Resolve<ConsolePrinter>();
 printer.WriteText();
-```
+````
 
 DatabaseTextService is registered once resolved many times throughout the application.
 
