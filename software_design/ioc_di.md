@@ -6,7 +6,7 @@ Inversion of control is a design pattern that aims to reduce awareness of implem
 
 If our original console printer example had to get text from a database we can use an interface rather than the implementation to reduce coupling (some loose coupling still exists)
 
-```c#
+```` c#
 public interface ITextService {
   string GetText();
 }
@@ -31,7 +31,7 @@ public class ConsolePrinter {
 }
 
 new ConsolePrinter(new DatabaseTextService()).WriteText();
-```
+````
 
 How is this better?
 ConsolePrinter is dependent on the interface ITextGetter not the implementation. If we need to get text from a web service and/or database this can be easily changed in a few places rather than changing all references to ConsolePrinter. 
