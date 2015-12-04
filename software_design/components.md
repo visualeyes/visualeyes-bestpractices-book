@@ -33,7 +33,7 @@ new ConsolePrinter().WriteText();
 Console printer is tightly coupled to TextService as it requires TextService to be able to WriteText.
 
 **Example of with No Coupling - Console Printer**
-``` csharp
+```csharp
 public class TextService {
   public string GetText() { return "text";  }
 }
