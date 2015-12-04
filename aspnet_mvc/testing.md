@@ -32,12 +32,18 @@ public void Num_Times_Two(int num, int expected) {
 
 ### Mocking
 
-**Example**
+**Example using Moq**
 ``` c#
 [Fact]
 public void Num_Times_Two(int num, int expected) {
-    var mockStorage
-
+    var mockStorage = new Mock<ITodoStorageService>();
+    var todoService = new TodoService(mockStorage.Object);
+    
+    mockStorage
+      .Setup(s => s.GetTodos())
+      .Returns(new List<TodoItemDTO>());
+      
+    
     int actual = multiplier.MultiplyByTwo(num);
     Assert.Equal(expected, actual);
 }
