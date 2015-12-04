@@ -21,7 +21,7 @@ Modules represent the core business logic of the application. Each module should
 
 ## Example
 
-``` c#
+```csharp
 public class TodoItemDto {
     public int ID { get; set; }
     public DateTime AddedUtc { get; set; }
