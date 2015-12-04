@@ -111,6 +111,10 @@ Performance tests measure the performance of a component and verify that the res
 
 Performance Budgetting is a common technique that works performance testing testing. It involves setting a budget for a particular operation and measuring that operation to see if it is under budget. For time based budgetting we can use the [Budgerigar library](https://github.com/visualeyes/budgerigar) to measure operations and act when the operation is over budget.
 
+todo
+- [ ] pros / cons of perf testing
+- [ ] stability in perf testing
+
 ## Code Coverage
 * Open Cover
  
