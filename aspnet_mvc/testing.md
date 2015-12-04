@@ -85,7 +85,7 @@ In this example we ensure that the TodoController will create the a view and sen
 ## Integration Tests
 Integration tests combine modules and dependencies to test the system as a whole. These tests verify functionality, performance and reliability of a whole module.
 
-### Data Driven Tests
+### State
 Integration tests may interact with state and network resources. It is critical to ensure that these tests start with an expected state. Failing to do this will result in inconsistent tests results. These tests should be limited and clean up any modified state after they complete.
 
 **Example**
