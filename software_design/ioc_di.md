@@ -6,7 +6,7 @@ Inversion of control is a design pattern that aims to reduce awareness of implem
 
 If our original console printer example had to get text from a database we can use an interface rather than the implementation to reduce coupling (some loose coupling still exists)
 
-``` c#
+```csharp
 public interface ITextService {
   string GetText();
 }
@@ -39,7 +39,7 @@ ConsolePrinter is dependent on the interface ITextGetter not the implementation.
 How does Dependency Injection further reduce coupling of components?
 Dependency Injection enables us to have a DI Container construct objects at runtime injecting the services into our classes. This enables us to specify implementations of a service in a reduced number of places rather than throughout the entire code base. 
 
-``` c#
+```csharp
 public interface ITextService {
   string GetText();
 }
@@ -84,7 +84,7 @@ DatabaseTextService is registered once resolved many times throughout the applic
 Service locator
 The service locator pattern is when you manually resolve Service inside constructors or methods.
 
-``` c#
+```csharp
 public class MyType {
   public void MyMethod() {
    var dep1 = Locator.Resolve<IDep1>();
@@ -103,7 +103,7 @@ Generally the frameworks handle the service location aspect i.e. ASP.NET MVC and
 
 **Simple Dependency Resolution**
 
-``` c#
+```csharp
 public interface ITextService {
   string GetText();
 }
@@ -123,7 +123,7 @@ public class ConsolePrinter {
 
 **Lazy Dependency Resolution**
 
-``` c#
+```csharp
 public interface ITextService {
   string GetText();
 }
@@ -144,7 +144,7 @@ public class ConsolePrinter {
 This doesn’t create a text service until it’s required. Useful for Network Services i.e. database.
 
 **Dependency Auto Factory**
-``` c#
+```csharp
 public interface ITextService {
   string GetText();
 }
