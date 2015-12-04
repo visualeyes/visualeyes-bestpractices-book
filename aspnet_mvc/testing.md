@@ -31,6 +31,14 @@ public void Num_Times_Two(int num, int expected) {
 ```
 
 ### Mocking
+Mocking in unit tests isolates the code being tested from it's dependencies. Using mocks dependencies can be replaced with an alternative implementation that can be controlled.
+
+There are three main techniques used to acheive this:
+* **Fakes:** Implements the dependency and return fixed results
+* **Stubs:** Implements the dependency and returns pre-recorded results (set in the test)
+* **Mocks:** Implements the dependency, returns pre-recorded results and records how dependencies are used
+
+Mocks are the best solution for isolating code. [Moq](http://www.moqthis.com/) is the Mocking framework we recommend.
 
 **Example using Moq**
 ``` c#
