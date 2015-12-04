@@ -5,7 +5,7 @@ Testing is a critical part of delivering high quality code. Testing helps preven
 Unit tests Assert that the logic in components operate as expected. Each Unit test should isolate a small part of a component and test that it operates as expected. Each test should be independent of other tests. Unit tests should not access persisted state or network services. This includes:
 
 * Relational Databases
-* NoSql Databaes
+* NoSql Databases
 * Files
 * Web Services
 
