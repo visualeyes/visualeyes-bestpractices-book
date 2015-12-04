@@ -84,7 +84,7 @@ DatabaseTextService is registered once resolved many times throughout the applic
 Service locator
 The service locator pattern is when you manually resolve Service inside constructors or methods.
 
-```c#
+```` c#
 public class MyType {
   public void MyMethod() {
    var dep1 = Locator.Resolve<IDep1>();
@@ -93,7 +93,7 @@ public class MyType {
    dep2.DoSomething(); 
   } 
 }
-```
+````
 
 This hides dependencies which makes it more difficult to maintain. Your method is dependent on the service locator and the internal dependencies. This can make testability more difficult (or impossible) if the Locator cannot be accessed.
 
@@ -103,7 +103,7 @@ Generally the frameworks handle the service location aspect i.e. ASP.NET MVC and
 
 **Simple Dependency Resolution**
 
-```c#
+```` c#
 public interface ITextService {
   string GetText();
 }
@@ -119,11 +119,11 @@ public class ConsolePrinter {
     Console.WriteLine(this.textService.GetText());
   }
 }
-```
+````
 
 **Lazy Dependency Resolution**
 
-```c#
+```` c#
 public interface ITextService {
   string GetText();
 }
@@ -140,11 +140,11 @@ public class ConsolePrinter {
     Console.WriteLine(textService.GetText());
   }
 }
-```
+````
 This doesn’t create a text service until it’s required. Useful for Network Services i.e. database.
 
 **Dependency Auto Factory**
-```c#
+```` c#
 public interface ITextService {
   string GetText();
 }
@@ -161,6 +161,6 @@ public class ConsolePrinter {
     Console.WriteLine(textService.GetText());
   }
 }
-```
+````
 
 This creates a factory that can create Text Services as needed (note you can also create factories that take constructors).
