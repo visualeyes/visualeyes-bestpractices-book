@@ -13,7 +13,7 @@ Unit tests Assert that the logic in components operate as expected. Each Unit te
 ### Facts and Theories (xUnit)
 
 **Fact Example**
-``` c#
+```csharp
 [Fact]
 public void One_Equal_One() {
     Assert.Equal(1, 1);
@@ -21,7 +21,7 @@ public void One_Equal_One() {
 ```
 
 **Theory Example**
-``` c#
+```csharp
 [Theory]
 [InlineData(1, 2)]
 [InlineData(2, 4)]
@@ -42,7 +42,7 @@ There are three main techniques used to acheive this:
 Mocks are the best solution for isolating code. [Moq](http://www.moqthis.com/) is the Mocking framework we recommend.
 
 **Example using Moq**
-``` c#
+```csharp
 [Fact]
 public void Get_Todos() {
     var mockStorage = new Mock<ITodoStorageService>();
@@ -67,7 +67,7 @@ In this example we ensure the todo service gets todos and only returns incomplet
 Component Testing tests a single component or a module. This is a broader test than a unit test as it tests the component and it's dependencies.
 
 **Example**
-``` c#
+```csharp
 [Fact]
 public void Get_Todos() {
     var todoStorage = new MemoryTodoStorageService(); // memory based service 
@@ -90,7 +90,7 @@ Integration tests combine modules and dependencies to test the system as a whole
 Integration tests may interact with state and network resources. It is critical to ensure that these tests start with an expected state. Failing to do this will result in inconsistent tests results. These tests should be limited and clean up any modified state after they complete.
 
 **Example**
-``` c#
+```csharp
 [Fact]
 public void Get_Todos() {
     var todoStorage = new TodoStorageService();
