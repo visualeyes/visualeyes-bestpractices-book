@@ -51,7 +51,7 @@ new ConsolePrinter().WriteText(text);
 ConsolePrinter and TextService are not coupled as each operates independently of each other.
 
 **Example with loose Coupling - Console Printer**
-```c#
+```csharp
 public interface ITextService {
   string GetText();
 }
