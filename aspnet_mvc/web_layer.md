@@ -12,7 +12,7 @@ Request models are responsible for holding the data sent to the WebServer from t
 View Models are responsible for holding the data sent to the View. These models should only contain data transformation logic. This logic should only exist to convert data into appropriate formats for the View.
 
 **Examples**
-``` c#
+```csharp
 public class AddTodoRequestModel {
     [Required]
     public string Title { get; set; }
@@ -36,7 +36,7 @@ Controllers handle User Actions and returns a Model and a View to the User. Cont
 How to handle validation that requires validating outside of the model
 
 **Example**
-``` c#
+```csharp
 public class TodoController {
     private readonly ITodoService todoService;
     
@@ -69,7 +69,7 @@ ASP.NET MVC provide a `ViewBag` in the View and Controller. This is a dynamic ob
 ASP.NET MVC provies HTML Helpers that generate HTML. These Helpers are useful for generating Html for Properties on a Model i.e. `Html.InputFor(t => t.Title)`. However, this does not restrict you from writing HTML in the view if required. When writing Html for properties on a Model it is advisable to use the `Html.NameFor` method.
 
 **For example**
-``` Html
+```html
 <input 
   class="my-nice-input" 
   type="text" 
