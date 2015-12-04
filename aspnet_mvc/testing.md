@@ -49,13 +49,18 @@ public void Get_Todos() {
     
     mockStorage
       .Setup(s => s.GetTodos())
-      .Returns(new List<TodoItemDTO>());
+      .Returns(new List<TodoItemDTO>() {
+        new TodoItemDto() { Title = "Todo", Done = false },
+        new TodoItemDto() { Title = "Done", Done = true }
+      });
       
     
-    var todos = todoService.GetTodos();
-    Assert.Empty(todos);
+    var todos = todoService.GetIncompleteTodoModels(t => t);
+    Assert.Equal(1, todos.Count());
 }
 ```
+
+In this example we ensure the todo service gets todos and only returns incomplete todos.
 
 ## Component Testing
 Component Testing tests a single component or a module. This is a broader test than a unit test as it tests the component and it's dependencies.
@@ -65,14 +70,16 @@ Component Testing tests a single component or a module. This is a broader test t
 [Fact]
 public void Get_Todos() {
     var todoStorage = new MemoryTodoStorageService(); // memory based service 
-    var todoService = new TodoService(mockStorage.Object);
+    var todoService = new TodoService(todoStorage);
+    var todoController = new TodoController(todoService);
     
-    var todos = todoService.GetTodos();
-    Assert.Empty(todos);
+    var viewResult = todoController.List();
+    
+    Assert.NotNull(viewResult);
+    Assert.NotNull(viewResult.Model);
 }
 ```
 
-This example doesn't quite capture the purpose of these tests as it is extremely simple
 
 ## Integration Tests
 Integration tests combine modules and dependencies to test the system as a whole. These tests verify functionality, performance and reliability of a whole module.
