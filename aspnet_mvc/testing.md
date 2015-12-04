@@ -44,8 +44,8 @@ public void Num_Times_Two(int num, int expected) {
       .Returns(new List<TodoItemDTO>());
       
     
-    int actual = multiplier.MultiplyByTwo(num);
-    Assert.Equal(expected, actual);
+    var todos = todoService.GetTodos();
+    Assert.Empty(todos);
 }
 ```
 
