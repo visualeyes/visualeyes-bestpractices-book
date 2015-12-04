@@ -1,12 +1,14 @@
-# Build Tools
+# Tools
 
-## Build Managers
+## Linters
+
+## Build Tools
 ### Gulp
 
 ### Grunt
 
-## Bundlers
+### Bundlers
 
-### Webpack
+#### Webpack
 
-### Browserify
+#### Browserify
