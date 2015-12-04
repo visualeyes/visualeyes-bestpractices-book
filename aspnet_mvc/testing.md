@@ -107,7 +107,9 @@ public void Get_Todos() {
 This example extends the previous example by attempting to retrieve todos from a database.
 
 ## Performance Tests
-Performance tests measure the performance of a component and verify that the result is an acceptable range.
+Performance tests measure the performance of a component and verify that the result is an acceptable range. Choosing an appropriate metric for performance is important i.e. CPU, Memory, Speed.
+
+Performance Budgetting is a common technique that works performance testing testing. It involves setting a budget for a particular operation and measuring that operation to see if it is under budget. For time based budgetting we can use the [Budgerigar library](https://github.com/visualeyes/budgerigar) to measure operations and act when the operation is over budget.
 
 ## Code Coverage
 * Open Cover
