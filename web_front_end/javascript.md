@@ -3,3 +3,5 @@
 ## Functional Programming
 
 ### Async
+* callbacks
+* promises
