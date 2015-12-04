@@ -13,7 +13,7 @@ This can be a contentious issue. It is easy to become stuck in thinking the best
 * Logic in the superclass is independent of logic in the subclass
 
 **Example of Good Inheritance**
-```c#
+```csharp
 public abstract class Widget {
   public virtual string GetClassName() {
     return "widget";
@@ -54,10 +54,10 @@ public class WidgetRenderer {
 * Blank widget only adds functionality
 * It is sealed at one level
 * In terms of coupling WidgetRenderer is loosely coupled to Widget  but BlankWidget is tightly coupled to Widget as it is dependent 
-* 
+
 
 **Example of Bad Inheritance**
-```c#
+```csharp
 public abstract class Widget {
   public virtual string GetClassName() {
     return "widget";
@@ -98,7 +98,7 @@ public class WidgetRenderer {
 * Widget implementation is not appropriate for Section Renderer
 
 **Example of with Composition + Inheritance from Interfaces**
-```c#
+```csharp
 public interface IWidget {
   string GetClassName();
   string GetBody();
