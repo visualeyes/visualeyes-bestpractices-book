@@ -1,5 +1,5 @@
 # Testing
-Testing is a critical part of delivering high quality code. Testing helps prevent regressions and bugs.
+Testing is a critical part of delivering high quality code. Testing helps prevent regressions and bugs. 
 
 ## Unit Tests
 Unit tests Assert that the logic in components operate as expected. Each Unit test should isolate a small part of a component and test that it operates as expected. Each test should be independent of other tests. Unit tests should not access persisted state or network services. This includes:
@@ -43,7 +43,7 @@ Mocks are the best solution for isolating code. [Moq](http://www.moqthis.com/) i
 **Example using Moq**
 ``` c#
 [Fact]
-public void Num_Times_Two(int num, int expected) {
+public void Get_Todos() {
     var mockStorage = new Mock<ITodoStorageService>();
     var todoService = new TodoService(mockStorage.Object);
     
@@ -57,10 +57,38 @@ public void Num_Times_Two(int num, int expected) {
 }
 ```
 
-### Code Coverage
-* Open Cover
+## Component Testing
+Component Testing tests a single component or a module. This is a broader test than a unit test as it tests the component and it's dependencies.
+
+**Basic Example**
+``` c#
+[Fact]
+public void Get_Todos() {
+    var todoStorage = new MemoryTodoStorageService(); // memory based service 
+    var todoService = new TodoService(mockStorage.Object);
+    
+    var todos = todoService.GetTodos();
+    Assert.Empty(todos);
+}
+```
+
+This example doesn't quite capture the purpose of these tests as it is extremely simple
 
 ## Integration Tests
+Integration tests combine modules and dependencies to test the system as a whole. These tests verify functionality, performance and reliability of a whole module.
+
+**Example**
+``` c#
+[Fact]
+public void Get_Todos() {
+    var todoStorage = new TodoStorageService(); // database
+    var todoService = new TodoService(mockStorage.Object);
+    
+    var todos = todoService.GetTodos();
+    Assert.Empty(todos);
+}
+```
+
 * Test components together
 * Can test against network resources
 
@@ -70,3 +98,11 @@ public void Num_Times_Two(int num, int expected) {
 * Cleanup
 
 ## Performance Tests
+
+
+## Code Coverage
+* Open Cover
+ 
+
+## Reading
+* http://martinfowler.com/articles/microservice-testing/
