@@ -32,6 +32,17 @@ public void Num_Times_Two(int num, int expected) {
 
 ### Mocking
 
+**Example**
+``` c#
+[Fact]
+public void Num_Times_Two(int num, int expected) {
+    var mockStorage
+
+    int actual = multiplier.MultiplyByTwo(num);
+    Assert.Equal(expected, actual);
+}
+```
+
 ### Code Coverage
 * Open Cover
 
