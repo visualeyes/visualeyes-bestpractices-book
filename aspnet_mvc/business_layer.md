@@ -48,14 +48,14 @@ public class TodoService : ITodoService {
     // This has the potential for DTOs to be used inappropriately
     // This can lead to duplication if multiple components access todo's in the same way
     //   i.e. getting incomplete todos
-    public IEnumerable<TodoItemDto> GetTodos() {
+    public IEnumerable\<TodoItemDto\> GetTodos() {
         return this.storage.GetTodos();
     }
     
     // Restrict access to DTOs by requiring a selector
     //   This prevents the DTOs being used downstream in inappropriate places
     // Apply business logic to the data at this layer to reduce duplication
-    public IEnumerable<T> GetIncompleteTodoModels<T>(Func<TodoItemDto, T> selector) {
+    public IEnumerable\<T\> GetIncompleteTodoModels\<T\>(Func\<TodoItemDto, T\> selector) {
         return this.storage
                     .GetTodos()
                     .Where(t => !t.Done)
