@@ -106,7 +106,7 @@ public void Get_Todos() {
 This example extends the previous example by attempting to retrieve todos from a database.
 
 ## Performance Tests
-
+Performance tests measure the performance of a component and verify that the result is an acceptable range.
 
 ## Code Coverage
 * Open Cover
