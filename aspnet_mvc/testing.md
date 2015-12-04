@@ -116,8 +116,9 @@ todo
 - [ ] stability in perf testing
 
 ## Code Coverage
-* Open Cover
- 
+todo
+- [ ] Open Cover
+- [ ] coveralls
 
 ## Reading
 * http://martinfowler.com/articles/microservice-testing/
