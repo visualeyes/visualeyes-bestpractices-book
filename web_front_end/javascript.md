@@ -9,3 +9,7 @@
 ### Async
 * callbacks
 * promises
+
+
+## Reading
+http://jstherightway.org/
