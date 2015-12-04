@@ -12,7 +12,7 @@ The critical part of creating components is well defined boundaries for componen
 High cohesion makes components easier to understand as they focus on a specific task. Loose coupling makes code easier to change and maintain. Changing tightly coupled components results in ripple effects thought an application. For example, changing x requires a change to y followed by changes to z and so on.
 
 **Example of Tight Coupling - Console Printer**
-``` csharp
+```csharp
 public class TextService {
   public string GetText() {  return "text";  }
 }
