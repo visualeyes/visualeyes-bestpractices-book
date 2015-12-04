@@ -13,7 +13,6 @@
    * [Packages](aspnet_mvc/packages.md)
    * [Testing](aspnet_mvc/testing.md)
 * [Web Front End](web_front_end.md)
-   * [Intro](web_front_end/intro.md)
    * [HTML](web_front_end/html.md)
    * [CSS](web_front_end/css.md)
    * [Javascript](web_front_end/javascript.md)
