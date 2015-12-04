@@ -2,7 +2,7 @@
 
 Static methods need to be used with caution. Public static methods are inherently tightly coupled to the components that use them. Public static methods also present a problem for testability.
 
-```c#
+```csharp
 // Ignore that we're not doing any locking
 public static class ItemCache {
   private static IEnumerable<Item> items;
@@ -34,7 +34,7 @@ ItemUser is tightly coupled with ItemCache. Any place that uses a method on Item
 ## When to use static methods?
 Static methods can be useful when they are stateless and do not create any internal dependencies.
 
-```c#
+```csharp
 public static ListTypeHelper {
   // Good
   public static bool IsList<T>(object item) {
