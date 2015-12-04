@@ -65,7 +65,7 @@ In this example we ensure the todo service gets todos and only returns incomplet
 ## Component Testing
 Component Testing tests a single component or a module. This is a broader test than a unit test as it tests the component and it's dependencies.
 
-**Basic Example**
+**Example**
 ``` c#
 [Fact]
 public void Get_Todos() {
@@ -80,29 +80,30 @@ public void Get_Todos() {
 }
 ```
 
+In this example we ensure that the TodoController will create the a view and send a model to the view.
 
 ## Integration Tests
 Integration tests combine modules and dependencies to test the system as a whole. These tests verify functionality, performance and reliability of a whole module.
+
+### Data Driven Tests
+Integration tests may interact with state and network resources. It is critical to ensure that these tests start with an expected state. Failing to do this will result in inconsistent tests results. These tests should be limited and clean up any modified state after they complete.
 
 **Example**
 ``` c#
 [Fact]
 public void Get_Todos() {
-    var todoStorage = new TodoStorageService(); // database
-    var todoService = new TodoService(mockStorage.Object);
+    var todoStorage = new TodoStorageService();
+    var todoService = new TodoService(todoStorage);
+    var todoController = new TodoController(todoService);
     
-    var todos = todoService.GetTodos();
-    Assert.Empty(todos);
+    var viewResult = todoController.List();
+    
+    Assert.NotNull(viewResult);
+    Assert.NotNull(viewResult.Model);
 }
 ```
 
-* Test components together
-* Can test against network resources
-
-### Data Driven Tests
-* Start with an expected state
-* Limit what you test
-* Cleanup
+This example extends the previous example by attempting to retrieve todos from a database.
 
 ## Performance Tests
 
